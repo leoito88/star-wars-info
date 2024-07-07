@@ -7,8 +7,8 @@
     font-family: "poppins", sans-serif;
 }
 
-html{
-    height: 100%;
+.hero{
+    height: 100vh;
     overflow: hidden;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
@@ -40,6 +40,10 @@ header{
 
 .body-main{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body-main h1{
@@ -51,6 +55,7 @@ header{
 .body-main h1{
     background: -webkit-linear-gradient( #fff, #38495a);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -59,20 +64,36 @@ header{
 }
 
 .list{
-    text-align: left;
+    text-align: center;
     color: #fff;
-    padding: 50px 30px;
+    padding: 50px 0px;
     width: 80%;
     line-height: 1.4rem;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.logo{
+    border: none;
 }
 
 a{
     color: #fff;
     transition: all 0.3s ease;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 a:hover{
     color: #b3b3b3;
+    background-color: #38495a;
 }
 
 footer{
@@ -86,4 +107,69 @@ footer{
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    background-color: #38495a;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.pagination{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.page{
+    color: #fff;
+}
+
+button{
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: transparent;
+}
+button:hover{
+    color: #b3b3b3;
+    background-color: #38495a;
+}
+
+.count{
+    font-size: 0.7rem;
+    color: #b4b4b4;
+}
+
+.card-body{
+    font-size: 0.9rem;
+}
+
+.card-body span{
+    font-weight: bold;
+}
+
+body{
+    background: #131c25;
 }

@@ -7,10 +7,35 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="menu">
-            <img src="img/Star_Wars_Logo.png" alt="">
+            <a href="index.html" class="logo"><img src="img/Star_Wars_Logo.png" alt=""></a>
         </div>
     </header>
+<br>
+
+    <!-- Título -->
+    <div class="body-main">
+        <h1>Personajes:</h1>
+        <div class="count" id="count">
+            <h6>Personajes encontrados: </h6>
+        </div>
+        <br>
+    </div>
+
+    <!-- Tarjetas -->
+    <div class="cards">
+        <div class="container-card" id="container-card"></div>  
+    </div>
+
+    <!-- Botones de paginación -->
+    <div class="pagination">
+        <button id="btn-anterior">Anterior</button>
+        <div class="page" id="page"></div>
+        <button id="btn-siguiente">Siguiente</button>
+    </div>
+    
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -8,34 +8,41 @@
     <link rel="stylesheet" href="css/stars.css">
 </head>
 <body>
+    <audio id='audio' src='audio/starwars.mp3' autoplay='true' loop='true'></audio>
+    
+    <section class="hero">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <main>
+    
+            <div class="body-main">
+                <img src="img/Star_Wars_Logo.png" alt="">
+                <h1>Bienvenido al buscador más grande de información <br> del mundo de Star Wars</h1>
+                <div class="list">
+                    <h4>Selecciona lo que deseas buscar:</h4>
+                    <br>
+                    <div class="links">
+                        <a href="characters.html">Personajes</a>
+                        <a href="">Naves Espaciales</a>
+                        <a href="">Películas</a>
+                        <a href="">Planetas</a>
+                        <a href="">Vehículos</a>
+                        <a href="">Especies</a>
+                    </div>
+                </div>
+            </div>
+    
+            <footer>
+                <h4>Hecho por Leandro Rojano</h4>
+            </footer>
+        </main>
+    </section>
     
 
-    <div class="stars"></div>
-    <div class="stars2"></div>
-    <div class="stars3"></div>
-    <main>
-
-        <div class="body-main">
-            <img src="img/Star_Wars_Logo.png" alt="">
-            <h1>Bienvenido al buscador más grande de información <br> del mundo de Star Wars</h1>
-            <div class="list">
-                <h4>Selecciona lo que deseas buscar:</h4>
-                <br>
-                <ul>
-                    <li><a href="characters.html">Personajes</a></li>
-                    <li>Naves Espaciales</li>
-                    <li>Películas</li>
-                    <li>Planetas</li>
-                    <li>Vehículos</li>
-                    <li>Especies</li>
-                </ul>
-            </div>
-        </div>
-
-        <footer>
-            <h4>Hecho por Leandro Rojano</h4>
-        </footer>
-    </main>
-    <script src="app.js"></script>
+    <script>
+        const miAudio = document.querySelector("audio");
+        miAudio.volume = 0.5;
+    </script>
 </body>
 </html>
