@@ -10,6 +10,10 @@ const obtenerPersonajes = async (page) => {
         createCards(data.results);
         countDiv.textContent = `Personajes encontrados: ${data.count}`;
         pageDiv.textContent = `Página ${page}`; // Mostrar la página actual
+    
+        // Habilitar o deshabilitar botones según la respuesta de la API
+        btnAnterior.disabled = !data.previous;
+        btnSiguiente.disabled = !data.next;
     } catch (error) {
         console.error("Error al obtener los personajes", error);
     }

@@ -37,6 +37,14 @@
         padding: 0;
         margin: 10px;
     }
+
+    .body-main h1{
+        font-size: 1.4rem;
+    }
+
+    .list{
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 320px){
