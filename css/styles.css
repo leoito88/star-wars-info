@@ -30,6 +30,7 @@ header{
     width: 80vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px;
     border-radius: 40px;
 }
@@ -125,7 +126,7 @@ footer{
 }
 
 .card{
-    background-color: #38495a;
+    background-color: #27333f;
     width: 300px;
     border-radius: 10px;
     padding: 10px 10px;
@@ -164,6 +165,7 @@ button:hover{
 
 .card-body{
     font-size: 0.9rem;
+    color: #e2e2e2;
 }
 
 .card-body span{
@@ -172,4 +174,17 @@ button:hover{
 
 body{
     background: #131c25;
+}
+
+.links-header a{
+    font-size: 0.8rem;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.links-header{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
