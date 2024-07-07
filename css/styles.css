@@ -188,3 +188,18 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.search{
+    text-align: center;
+    padding: 20px 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+input{
+    padding: 10px;
+    background-color: #1b2735;
+    border: 1px solid white;
+    width: 100%;
+    color: #b4b4b4;
+}

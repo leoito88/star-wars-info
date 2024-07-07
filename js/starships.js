@@ -46,6 +46,29 @@ const createCards = async (naves) => {
     }
 };
 
+function filterData(searchText) {
+    let cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        let cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+        if (searchText == ' ' || searchText == '') {
+            card.style.display = 'block';
+
+        }
+        if (cardTitle.includes(searchText)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+document.getElementById('searchInput').addEventListener('input', () => {
+    let searchText = document.getElementById('searchInput').value.trim().toLowerCase();
+
+    filterData(searchText);
+
+});
+
 // Agregar botones de navegación
 const btnAnterior = document.querySelector("#btn-anterior");
 const btnSiguiente = document.querySelector("#btn-siguiente");
