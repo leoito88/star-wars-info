@@ -25,6 +25,7 @@ https://leoito88.github.io/star-wars-info/
 
 
 Versión Móvil
+
 ![image](https://github.com/leoito88/star-wars-info/assets/59623841/e17dfdb8-f683-4eaf-a3cf-46f1634c7491)
 
 ![image](https://github.com/leoito88/star-wars-info/assets/59623841/e0a9098e-7ce3-4e0e-965e-db87a9e08b05)
