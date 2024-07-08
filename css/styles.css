@@ -110,6 +110,17 @@ footer{
     transform: translate(-50%, 0);
 }
 
+footer h4{
+    text-wrap: nowrap;
+    border: none;
+}
+
+footer a{
+    text-wrap: nowrap;
+    border: none;
+    padding: 0;
+}
+
 .container-card{
     display: flex;
     flex-direction: row;
