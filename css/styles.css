@@ -18,6 +18,8 @@ main{
     justify-content: center;
 }
 
+/* Header */
+
 header{
     display: flex;
     justify-content: center;
@@ -39,6 +41,26 @@ header{
     width: 80px;
 }
 
+.logo{
+    border: none;
+}
+
+.links-header a{
+    font-size: 0.8rem;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.links-header{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* Cuerpo Principal */
+
 .body-main{
     text-align: center;
     display: flex;
@@ -51,9 +73,6 @@ header{
     font-weight: 600;
     font-size: 2rem;
     letter-spacing: 10px;
-}
-
-.body-main h1{
     background: -webkit-linear-gradient( #fff, #38495a);
     -webkit-background-clip: text;
     background-clip: text;
@@ -63,6 +82,17 @@ header{
 .body-main img{
     width: 30%;
 }
+
+.count{
+    font-size: 0.7rem;
+    color: #b4b4b4;
+}
+
+body{
+    background: #131c25;
+}
+
+/* Links pantalla hero */
 
 .list{
     text-align: center;
@@ -79,10 +109,6 @@ header{
     justify-content: center;
 }
 
-.logo{
-    border: none;
-}
-
 a{
     color: #fff;
     transition: all 0.3s ease;
@@ -96,6 +122,8 @@ a:hover{
     color: #b3b3b3;
     background-color: #38495a;
 }
+
+/* Footer */
 
 footer{
     position: absolute;
@@ -121,6 +149,37 @@ footer a{
     padding: 0;
 }
 
+.pagination{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.page{
+    color: #fff;
+}
+
+/* Buscador  */
+
+.search{
+    text-align: center;
+    padding: 20px 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+input{
+    padding: 10px;
+    background-color: #1b2735;
+    border: 1px solid white;
+    width: 100%;
+    color: #b4b4b4;
+}
+
+/* Tarjeta */
+
 .container-card{
     display: flex;
     flex-direction: row;
@@ -143,17 +202,16 @@ footer a{
     padding: 10px 10px;
 }
 
-.pagination{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0 20px 0;
+.card-body{
+    font-size: 0.9rem;
+    color: #e2e2e2;
 }
 
-.page{
-    color: #fff;
+.card-body span{
+    font-weight: bold;
 }
+
+/* Botones anterior y siguiente */
 
 button{
     color: #fff;
@@ -167,50 +225,4 @@ button{
 button:hover{
     color: #b3b3b3;
     background-color: #38495a;
-}
-
-.count{
-    font-size: 0.7rem;
-    color: #b4b4b4;
-}
-
-.card-body{
-    font-size: 0.9rem;
-    color: #e2e2e2;
-}
-
-.card-body span{
-    font-weight: bold;
-}
-
-body{
-    background: #131c25;
-}
-
-.links-header a{
-    font-size: 0.8rem;
-    border: none;
-    text-wrap: nowrap;
-}
-
-.links-header{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.search{
-    text-align: center;
-    padding: 20px 20px;
-    width: 90%;
-    max-width: 500px;
-}
-
-input{
-    padding: 10px;
-    background-color: #1b2735;
-    border: 1px solid white;
-    width: 100%;
-    color: #b4b4b4;
 }
